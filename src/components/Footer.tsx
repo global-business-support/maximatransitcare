@@ -57,7 +57,12 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-pro py-5 text-xs text-white/60 flex flex-col sm:flex-row justify-between gap-2">
           <p>© {new Date().getFullYear()} Maxima Transit Care. All rights reserved.</p>
-          <p>HIPAA Compliant • Licensed & Insured</p>
+          <div className="flex flex-wrap items-center gap-4">
+  <Link to="/privacy-policy" className="hover:text-white transition-colors">
+    Privacy Policy
+  </Link>
+  <span>HIPAA Compliant • Licensed & Insured</span>
+</div>
         </div>
       </div>
     </footer>

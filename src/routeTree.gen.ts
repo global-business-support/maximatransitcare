@@ -13,6 +13,7 @@ import { Route as WhyChooseUsRouteImport } from './routes/why-choose-us'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as LanguageServicesRouteImport } from './routes/language-services'
 import { Route as FleetRouteImport } from './routes/fleet'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -38,6 +39,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
   id: '/service-areas',
   path: '/service-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LanguageServicesRoute = LanguageServicesRouteImport.update({
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/fleet': typeof FleetRoute
   '/language-services': typeof LanguageServicesRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
@@ -90,6 +97,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/fleet': typeof FleetRoute
   '/language-services': typeof LanguageServicesRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
@@ -103,6 +111,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/fleet': typeof FleetRoute
   '/language-services': typeof LanguageServicesRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
@@ -117,6 +126,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fleet'
     | '/language-services'
+    | '/privacy-policy'
     | '/service-areas'
     | '/services'
     | '/testimonials'
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fleet'
     | '/language-services'
+    | '/privacy-policy'
     | '/service-areas'
     | '/services'
     | '/testimonials'
@@ -141,6 +152,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fleet'
     | '/language-services'
+    | '/privacy-policy'
     | '/service-areas'
     | '/services'
     | '/testimonials'
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FleetRoute: typeof FleetRoute
   LanguageServicesRoute: typeof LanguageServicesRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   ServicesRoute: typeof ServicesRoute
   TestimonialsRoute: typeof TestimonialsRoute
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/service-areas'
       fullPath: '/service-areas'
       preLoaderRoute: typeof ServiceAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/language-services': {
@@ -242,6 +262,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FleetRoute: FleetRoute,
   LanguageServicesRoute: LanguageServicesRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   ServicesRoute: ServicesRoute,
   TestimonialsRoute: TestimonialsRoute,
@@ -250,3 +271,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
