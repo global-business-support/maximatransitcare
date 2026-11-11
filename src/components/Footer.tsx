@@ -62,6 +62,7 @@ export function Footer() {
     Privacy Policy
   </Link>
   <span>HIPAA Compliant • Licensed & Insured</span>
+  <span>Powered by Global Virtual Support</span>
 </div>
         </div>
       </div>
