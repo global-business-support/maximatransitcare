@@ -66,8 +66,8 @@ function HomePage() {
               <Link to="/booking" className="btn-primary hover:btn-primary-hover">
                 <Calendar className="h-5 w-5" /> Book A Ride
               </Link>
-              <a href="tel:+18005551234" className="btn-outline-white hover:bg-white/10">
-                <Phone className="h-5 w-5" /> Call Now: (800) 555-1234
+              <a href="tel:+14044701551" className="btn-outline-white hover:bg-white/10">
+                <Phone className="h-5 w-5" /> Call Now: +1 (404) 470-1551
               </a>
             </div>
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl">

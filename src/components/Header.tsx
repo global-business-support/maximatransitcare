@@ -37,8 +37,8 @@ export function Header() {
         <div className="container-pro flex h-9 items-center justify-between">
           <span className="font-medium opacity-90">24/7 Non-Emergency Medical Transportation across the USA</span>
           <div className="flex items-center gap-4">
-            <a href="tel:+18005551234" className="inline-flex items-center gap-1.5 font-semibold transition-colors hover:text-[color:var(--brand-red)]">
-              <Phone className="h-3.5 w-3.5" /> (800) 555-1234
+            <a href="tel:+14044701551" className="inline-flex items-center gap-1.5 font-semibold transition-colors hover:text-[color:var(--brand-red)]">
+              <Phone className="h-3.5 w-3.5" /> +1 (404) 470-1551
             </a>
             <a href="mailto:info@maximatransitcare.com" className="hidden items-center gap-1.5 font-medium opacity-90 hover:opacity-100 lg:inline-flex">
               <Mail className="h-3.5 w-3.5" />
@@ -107,8 +107,8 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
-            <a href="tel:+18005551234" className="flex items-center gap-2 px-4 py-3 font-bold text-[color:var(--brand-blue)]">
-              <Phone className="h-4 w-4" /> (800) 555-1234
+            <a href="tel:+14044701551" className="flex items-center gap-2 px-4 py-3 font-bold text-[color:var(--brand-blue)]">
+              <Phone className="h-4 w-4" /> +1 (404) 470-1551
             </a>
             <Link to="/booking" onClick={() => setOpen(false)} className="btn-primary mt-2 w-full">
               <Calendar className="h-4 w-4" /> {t("cta.book")}

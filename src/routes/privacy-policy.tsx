@@ -258,6 +258,15 @@ function PrivacyPolicyPage() {
                   <strong>Company Name:</strong> Maxima Transit Care
                 </p>
                 <p>
+                  <strong>Phone:</strong>{" "}
+                  <a
+                    className="text-[color:var(--brand-blue)] underline"
+                    href="tel:+14044701551"
+                  >
+                    +1 (404) 470-1551
+                  </a>
+                </p>
+                <p>
                   <strong>Website:</strong> maximatransitcare.com
                 </p>
                 <p>

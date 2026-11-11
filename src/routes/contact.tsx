@@ -58,7 +58,7 @@ function ContactPage() {
         <div className="container-pro grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2 space-y-4">
             {[
-              { icon: Phone, label: "Phone", value: "(800) 555-1234", href: "tel:+18005551234" },
+              { icon: Phone, label: "Phone", value: "+1 (404) 470-1551", href: "tel:+14044701551" },
               { icon: Mail, label: "Email", value: "info@maximatransitcare.com", href: "mailto:info@maximatransitcare.com" },
               { icon: MapPin, label: "Office", value: "United States" },
               { icon: Clock, label: "Hours", value: "24/7 Dispatch • Office: 8am–6pm" },

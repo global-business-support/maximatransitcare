@@ -47,7 +47,7 @@ export function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> <a href="tel:+18005551234">(800) 555-1234</a></li>
+            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> <a href="tel:+14044701551">+1 (404) 470-1551</a></li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> <a href="mailto:info@maximatransitcare.com">info@maximatransitcare.com</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> 123 Healthcare Blvd, USA</li>
             <li className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> 24/7 Availability</li>
@@ -62,7 +62,6 @@ export function Footer() {
     Privacy Policy
   </Link>
   <span>HIPAA Compliant • Licensed & Insured</span>
-  <span>Powered by Global Virtual Support</span>
 </div>
         </div>
       </div>

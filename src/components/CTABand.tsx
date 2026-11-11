@@ -28,7 +28,7 @@ export function CTABand() {
                   <Calendar className="h-5 w-5" /> Book A Ride
                 </Link>
                 <a
-                  href="tel:+18005551234"
+                  href="tel:+14044701551"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-white/70 text-white font-bold hover:bg-white/10 transition"
                 >
                   <Phone className="h-5 w-5" /> Call Now

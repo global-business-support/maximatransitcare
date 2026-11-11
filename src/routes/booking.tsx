@@ -154,7 +154,7 @@ function BookingPage() {
               <h2 className="text-2xl font-extrabold text-[color:var(--brand-blue-deep)]">{t("booking.received")}</h2>
               <p className="mt-2 text-muted-foreground">{t("booking.confirm")}</p>
               <div className="mt-6 grid sm:grid-cols-3 gap-3 text-sm">
-                <a href="tel:+18005551234" className="flex items-center justify-center gap-2 p-3 rounded-xl bg-secondary font-semibold"><Phone className="h-4 w-4" /> Call</a>
+                <a href="tel:+14044701551" className="flex items-center justify-center gap-2 p-3 rounded-xl bg-secondary font-semibold"><Phone className="h-4 w-4" /> Call</a>
                 <a href="mailto:info@maximatransitcare.com" className="flex items-center justify-center gap-2 p-3 rounded-xl bg-secondary font-semibold"><Mail className="h-4 w-4" /> Email</a>
                 <div className="flex items-center justify-center gap-2 p-3 rounded-xl bg-secondary font-semibold"><Clock className="h-4 w-4" /> 24/7</div>
               </div>
