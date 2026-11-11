@@ -126,6 +126,18 @@ function ContactPage() {
                 <button type="submit" className="btn-primary hover:btn-primary-hover w-full py-4">
                   <Send className="h-5 w-5" /> Send Message
                 </button>
+                <p className="text-xs leading-5 text-muted-foreground">
+                  By providing your telephone number and submitting this form, you consent to be
+                  contacted by Maxima Transit Care via SMS text message and agree to our{" "}
+                  <a
+                    href="/privacy-policy"
+                    className="underline underline-offset-2 hover:text-[color:var(--brand-blue-deep)]"
+                  >
+                    Privacy Policy
+                  </a>
+                  . Message frequency may vary. Message and data rates may apply. Reply STOP to opt
+                  out of further messaging. Reply HELP for more information.
+                </p>
               </form>
             )}
           </div>
