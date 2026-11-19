@@ -270,6 +270,9 @@ function PrivacyPolicyPage() {
                   <strong>Website:</strong> maximatransitcare.com
                 </p>
                 <p>
+                  <strong>Address:</strong> 3802 Grapevine St, Houston, TX
+                </p>
+                <p>
                   <strong>Email:</strong>{" "}
                   <a
                     className="text-[color:var(--brand-blue)] underline"
