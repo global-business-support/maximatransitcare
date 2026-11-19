@@ -49,7 +49,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> <a href="tel:+14044701551">+1 (404) 470-1551</a></li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> <a href="mailto:info@maximatransitcare.com">info@maximatransitcare.com</a></li>
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> 123 Healthcare Blvd, USA</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> 3802 Grapevine St, Houston, TX</li>
             <li className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 text-[color:var(--brand-red)]" /> 24/7 Availability</li>
           </ul>
         </div>

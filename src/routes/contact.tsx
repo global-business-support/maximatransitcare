@@ -60,7 +60,7 @@ function ContactPage() {
             {[
               { icon: Phone, label: "Phone", value: "+1 (404) 470-1551", href: "tel:+14044701551" },
               { icon: Mail, label: "Email", value: "info@maximatransitcare.com", href: "mailto:info@maximatransitcare.com" },
-              { icon: MapPin, label: "Office", value: "United States" },
+              { icon: MapPin, label: "Office", value: "3802 Grapevine St, Houston, TX" },
               { icon: Clock, label: "Hours", value: "24/7 Dispatch • Office: 8am–6pm" },
             ].map(item => (
               <motion.div key={item.label} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
@@ -83,7 +83,7 @@ function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] aspect-video bg-secondary">
               <iframe
                 title="Office location"
-                src="https://www.google.com/maps?q=United%20States&output=embed"
+                src="https://www.google.com/maps?q=3802%20Grapevine%20St%2C%20Houston%2C%20TX&output=embed"
                 className="w-full h-full"
                 loading="lazy"
               />
